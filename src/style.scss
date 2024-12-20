@@ -1,0 +1,64 @@
+gh-svg-to-pdf {
+    .generate-pdf-wrapper {
+        position: relative;
+    }
+    
+    .generate-pdf-wrapper__button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Roboto', sans-serif;
+        font-size: 14px;
+        margin: 5px;
+        padding: 11px 13px;
+        line-height: 100%;
+        text-align: center;
+        color: #fafdfd;
+        border: 1px solid #0D99FF;
+        border-radius: 50px;
+        background-color: #0D99FF;
+        transition: all .3s ease-in-out;
+        cursor: pointer;
+    }
+
+    .generate-pdf-wrapper__button:hover {
+        color: #0D99FF;
+        background-color: #fafdfd;
+    }
+    
+    .generate-pdf-wrapper__loader {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 1000;
+    }
+    
+    .generate-pdf-wrapper__spinner {
+        width: 20px;
+        height: 20px;
+        border: 3px solid rgb(255, 255, 255);
+        border-top: 3px solid #0D99FF;
+        border-radius: 50%;
+        animation: generate-pdf-wrapper__spin 1s linear infinite;
+    }
+    
+    @keyframes generate-pdf-wrapper__spin {
+        from {
+            transform: rotate(0deg);
+        }
+        
+        to {
+            transform: rotate(360deg);
+        }
+    }
+    
+    .generate-pdf-wrapper__button[disabled] {
+        opacity: 0.6;
+        pointer-events: none;
+        cursor: not-allowed;
+    }
+}
