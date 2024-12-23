@@ -55,11 +55,11 @@ export const generatePdfFileData = (itemsData) => {
 								</g>
 							</g>
 						</g>
-						<g id="Art_no">
+						<g id="Art_no" style="${item.print_size === "1" || 'display: none;'}">
 							<text x="980" y="1010" class="st1 st4 st5">XXXXXXXXX</text>
 							<text id="title" x="934" y="1010" class="st1 st6 st5 st24">Art no:</text>
 						</g>
-						<g id="Print_size">
+						<g id="Print_size" style="${item.print_size === "1" || 'display: none;'}">
 							<g id="text">
 								<text x="1000" y="985" class="st1 st4 st5">9 cm / 3.5 in W: 4 cm / 1.6 in</text>
 							</g>
