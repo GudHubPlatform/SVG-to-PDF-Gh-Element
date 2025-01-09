@@ -201,7 +201,7 @@ export const generatePdfFileData = (itemsData) => {
 						</g>
 						<g id="Customer_name">
 							<text id="subtitle" transform="matrix(1 0 0 1 1536.9415 116.7316)" class="st1 st4 st21">Private Label Proposal</text>
-							<text transform="matrix(1 0 0 1 1536.9417 87.172)" class="st1 st22 st23 st24">Customer Name</text>
+							<text transform="matrix(1 0 0 1 1536.9417 87.172)" class="st1 st22 st23 st24">${item.customer_name}</text>
 						</g>
 					</svg>
 				`
