@@ -55,17 +55,17 @@ export const generatePdfFileData = (itemsData) => {
 								</g>
 							</g>
 						</g>
-						<g id="Art_no" style="${item.print_size === "1" || 'display: none;'}">
+						<g id="Art_no" style="${item.print_size == "1" || 'display: none;'}">
 							<text x="980" y="1010" class="st1 st4 st5">XXXXXXXXX</text>
 							<text id="title" x="934" y="1010" class="st1 st6 st5 st24">Art no:</text>
 						</g>
-						<g id="Print_size" style="${item.print_size === "1" || 'display: none;'}">
+						<g id="Print_size" style="${item.print_size == "1" || 'display: none;'}">
 							<g id="text">
 								<text x="1000" y="985" class="st1 st4 st5">9 cm / 3.5 in W: 4 cm / 1.6 in</text>
 							</g>
 							<text x="934" y="985" class="st1 st6 st5 st24">Print size:</text>
 						</g>
-						<g id="Print_specifications" style="transform: translate(0, 800); ${Object.values(item.print_specifications_values).filter(el => el.color && el.color !== null && el.color !== "").length && item.print_specifications === "1" || 'display: none;'}">
+						<g id="Print_specifications" style="transform: translate(0, 800); ${Object.values(item.print_specifications_values).filter(el => el.color && el.color !== null && el.color !== "").length && item.print_specifications == "1" || 'display: none;'}">
 							<text id="title" x="998" y="50" class="st1 st6 st5 st24" text-anchor="middle">Print specifications</text>
 
 							<defs>
@@ -102,7 +102,7 @@ export const generatePdfFileData = (itemsData) => {
 							</g>
 						</g>
 
-						<g id="Product_specifications" style="transform: translate(0, 620); ${Object.values(item.product_specifications_values).filter(el => el.color && el.color !== null && el.color !== "").length && item.product_specifications === "1" || 'display: none;'}">
+						<g id="Product_specifications" style="transform: translate(0, 620); ${Object.values(item.product_specifications_values).filter(el => el.color && el.color !== null && el.color !== "").length && item.product_specifications == "1" || 'display: none;'}">
 							<text id="title" x="1008" y="50" class="st1 st6 st5 st24" text-anchor="middle">Product specifications</text>
 							
 							<g id="_x31__part" transform="translate(990, 93)">
