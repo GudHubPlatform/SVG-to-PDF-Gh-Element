@@ -15,8 +15,6 @@ pdfMake.fonts = {
     }
 };
 
-console.log(pdfMake);
-
 import { generateProposalScheme } from './helpers/generateProposalScheme.js';
 import { generatePdfFileData } from './helpers/generatePdfFileData.js';
 
