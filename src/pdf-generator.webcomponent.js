@@ -10,8 +10,8 @@ pdfMake.fonts = {
     Mont: {
         normal: 'Mont-Regular.ttf',
         bold: 'Mont-Bold.ttf',
-        italics: 'Mont-RegularItalic.ttf',
-        bolditalics: 'Mont-BoldItalic.ttf'
+        // italics: 'Mont-RegularItalic.ttf',
+        // bolditalics: 'Mont-BoldItalic.ttf'
     }
 };
 
