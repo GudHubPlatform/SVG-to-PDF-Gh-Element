@@ -3,17 +3,19 @@ import html from './pdf-generator.html';
 import './style.scss';
 
 import pdfMake from "pdfmake/build/pdfmake.js";
-import pdfFonts from "pdfmake/build/vfs_fonts.js";
+import pdfFonts from "./fonts/vfs_fonts.js";
 
 pdfMake.vfs = pdfFonts.default?.pdfMake?.vfs || pdfFonts.pdfMake?.vfs;
 pdfMake.fonts = {
     Mont: {
         normal: 'Mont-Regular.ttf',
         bold: 'Mont-Bold.ttf',
-        // italics: 'Mont-RegularItalic.ttf',
-        // bolditalics: 'Mont-BoldItalic.ttf'
+        italics: 'Mont-RegularItalic.ttf',
+        bolditalics: 'Mont-BoldItalic.ttf'
     }
 };
+
+console.log(pdfMake);
 
 import { generateProposalScheme } from './helpers/generateProposalScheme.js';
 import { generatePdfFileData } from './helpers/generatePdfFileData.js';
