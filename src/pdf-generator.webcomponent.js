@@ -8,8 +8,10 @@ import pdfFonts from "pdfmake/build/vfs_fonts.js";
 pdfMake.vfs = pdfFonts.default?.pdfMake?.vfs || pdfFonts.pdfMake?.vfs;
 pdfMake.fonts = {
     Mont: {
-        normal: 'https://en.bestfonts.pro/fonts_files/5c377611c8e4b404a029150c/files/Mont-Regular.ttf',
-        bold: 'https://en.bestfonts.pro/fonts_files/5c377611c8e4b404a029150c/files/Mont-Bold.ttf'
+        normal: 'Mont-Regular.ttf',
+        bold: 'Mont-Bold.ttf',
+        italics: 'Mont-RegularItalic.ttf',
+        bolditalics: 'Mont-BoldItalic.ttf'
     }
 };
 
